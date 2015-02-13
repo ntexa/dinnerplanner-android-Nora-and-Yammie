@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- the theme applied to the application or activity -->
+    <style name="AppTheme"
+        parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">#ffad112b</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="MakeDinnerThumbs">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">#ffad112b</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="GridStyle">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:numColumns">auto_fit</item>
+        <item name="android:columnWidth">90dp</item>
+        <item name="android:stretchMode">spacingWidthUniform</item>
+        <item name="android:horizontalSpacing">@dimen/activity_horizontal_margin</item>
+        <item name="android:verticalSpacing">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+    tools:context=".MainWelcome_activity"
+    android:padding="50dp"
+    android:id="@+id/mainwelcome_view">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Dinner Planner!"
+        android:id="@+id/textView"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Here you will be able to easily plan your dinner.\n\nOn the next page, start by selecting number of participants."
+        android:id="@+id/textView2"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Then select your courses."
+        android:id="@+id/textView4"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Watch the magic happen!"
+        android:id="@+id/textView3"
+        android:textSize="16dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_button"
+        android:text="Start"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="chooseCourses"
+        android:textColor="#ffffffff"
+        android:background="#ffad112b" />
+
+</LinearLayout>

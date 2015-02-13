@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="se.kth.csc.iprog.dinnerplanner.android" >
+
+    <application
+        android:name=".DinnerPlannerApplication"
+        android:allowBackup="true"
+        android:icon="@null"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainWelcome_activity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddMenu_activity"
+            android:label="Choose Menu"
+            android:parentActivityName=".MainWelcome_activity" >
+        </activity>
+        <activity
+            android:name=".Summary_Activity"
+            android:label="@string/title_activity_make_dinner"
+            android:parentActivityName=".AddMenu_activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AddMenu_activity" />
+        </activity>
+        <activity
+            android:name=".AddDish_Activity"
+            android:label="@string/title_activity_course_dialog"
+            android:parentActivityName=".AddMenu_activity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AddMenu_activity" />
+        </activity>
+        <activity
+            android:name=".TabbedActivity"
+            android:label="@string/title_activity_tabbed" >
+        </activity>
+    </application>
+
+</manifest>

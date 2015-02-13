@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_gravity="center"
+    android:id="@+id/dialog_container">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toast"
+        android:id="@+id/dialog_course_image"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course Name"
+                android:id="@+id/dialog_course_name"
+                style="@style/title"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80 kr (20 kr / Person)"
+                android:id="@+id/dialog_course_cost"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addcourse_Bttn"
+                android:text="Add"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="#ffad112b"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

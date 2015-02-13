@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/choosemenu_view"
+    tools:context=".MakeMenu_activity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:weightSum="1"
+            android:id="@+id/LayoutChooseOne">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutTitle">
+
+                <LinearLayout
+                    android:focusable="true" android:focusableInTouchMode="true"
+                    android:layout_width="0px" android:layout_height="0px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:hint="Number of guests"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/numberGuests_txt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:imeOptions="actionDone"
+                    android:textSize="18dp"
+                    android:textColor="#ff000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total cost: 1000 kr"
+                    android:layout_gravity="center"
+                    android:textSize="18dp"
+                    android:layout_weight="0"
+                    android:id="@+id/totalCost"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:id="@+id/numberGuests"
+                android:textSize="18dp"
+                android:editable="true" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/LayoutChooseTwo">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Menu"
+                android:textSize="24sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:id="@+id/chooseMenu_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starters"
+                android:textSize="18dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"/>
+
+            <GridView
+                style="@style/GridStyle"
+                android:id="@+id/starters_grid"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Courses"
+                android:textSize="18dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"/>
+
+            <GridView
+                style="@style/GridStyle"
+                android:id="@+id/main_course_grid"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desserts"
+                android:textSize="18dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"/>
+
+            <GridView
+                style="@style/GridStyle"
+                android:id="@+id/dessert_grid"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/create_button"
+                    android:background="#ffad112b"
+                    android:clickable="true"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
